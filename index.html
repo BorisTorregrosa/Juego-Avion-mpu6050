@@ -1660,7 +1660,7 @@ button:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
   /* Sensor (ESP32 por WebSocket) */
 var SERVIDOR_WS = (location.protocol === 'file:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')
   ? 'ws://localhost:3000/ws?role=juego'
-  : 'wss://TU-APP.onrender.com/ws?role=juego';
+  : 'wss://juego-avion-mpu6050.onrender.com/ws?role=juego';
 var sensor = { giro: 0, subida: 0, t: 0, conectado: false };
 var wsSensor = null;
 
